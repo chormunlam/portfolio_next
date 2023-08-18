@@ -1,6 +1,7 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaWordpress } from "react-icons/fa";
+
 import { LuGraduationCap } from "react-icons/lu";
 import cat from "@/public/catAdopt.png";
 import onlyfan from "@/public/onlyFans.png";
@@ -35,14 +36,7 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
-  {
-    title: "Graduated from Queens College",
-    location: "New York, NY",
-    description:
-      "Graduated with a major in computer science in June 2023. Gained skills in HTML, CSS, JavaScript, React, and continued learning data analysis, AI, Cloud Computing, and other new technologies.",
-    icon: React.createElement(LuGraduationCap),
-    date: "June 2023",
-  },
+ 
   {
     title: "Intern",
     location: "New York, NY",
@@ -57,8 +51,16 @@ export const experiencesData = [
     location: "New York, NY",
     description:
       "Developed and maintained WordPress websites using Woo-commerce and Elementor. Collaborated on a Chatbot project using JavaScript and managed Google Forms for client information. Represented the Tech Incubator at events, creating networking opportunities.",
-      icon: React.createElement(CgWorkAlt),
+      icon: React.createElement(FaWordpress),
     date: "10/01/2022 - Present",
+  },
+  {
+    title: "Graduated from Queens College",
+    location: "New York, NY",
+    description:
+      "Graduated with a major in computer science in June 2023. Gained skills in HTML, CSS, JavaScript, React, and continued learning data analysis, AI, Cloud Computing, and other new technologies.",
+    icon: React.createElement(LuGraduationCap),
+    date: "June 2023",
   },
 ] as const;
 
@@ -74,14 +76,14 @@ export const projectsData = [
   {
     title: "Cat Adoption",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "this is the website for member to log in and add cat, it will reender on the home page, use react.js as frontend, styled with styled compoent, the homepage it for public, after sign, we can addthe cat It has features like filtering, sorting and pagination.",
     tags: ["React", "JavaScript", "supabase backend", "Styled component"],
     imageUrl: cat,
   },
   {
     title: "onlyFan Clone",
     description:
-      "allow to do the translation using voice input, with user friendly UI.",
+      "mobile subsciption member app allow to render user card, post image and messge. Authenation using the AWS amplify",
     tags: ["React native", "AWS amplify"],
     imageUrl: onlyfan,
   },

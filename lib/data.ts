@@ -36,30 +36,32 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduated from Queens College",
+    location: "New York, NY",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Graduated with a major in computer science in June 2023. Gained skills in HTML, CSS, JavaScript, React, and continued learning data analysis, AI, Cloud Computing, and other new technologies.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "June 2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Intern",
+    location: "New York, NY",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "Currently working as an intern, focusing on hands-on experience to understand real-world applications. Committed to learning and preparing for a full-time position, particularly in debugging projects.",
+  
+    icon: React.createElement(FaReact ),
+    date: "Present",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Part-time Associate at Queens College Tech Incubator",
+    location: "New York, NY",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Developed and maintained WordPress websites using Woo-commerce and Elementor. Collaborated on a Chatbot project using JavaScript and managed Google Forms for client information. Represented the Tech Incubator at events, creating networking opportunities.",
+      icon: React.createElement(CgWorkAlt),
+    date: "10/01/2022 - Present",
   },
 ] as const;
+
 
 export const projectsData = [
   {

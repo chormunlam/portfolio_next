@@ -6,7 +6,7 @@ import React, { useState, createContext, useContext } from "react";
 type ActiveSectionContextProviderProps = {
   children: React.ReactNode;
 };
-
+//type script is so confused ><
 type ActiveSectionContextType = {
   activeSection: SectionName;
   setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
@@ -15,7 +15,7 @@ type ActiveSectionContextType = {
 };
 
 export const ActiveSectionContext =
-  createContext<ActiveSectionContextType | null>(null);
+  createContext<ActiveSectionContextType | null>(null);//allow to use null
 
 export default function ActiveSectionContextProvider({
   children,

@@ -9,7 +9,7 @@ import { ActiveSectionContext, useActiveSectionContext } from "@/context/active-
 
 export default function Header() {
 
-  const{activeSection,setActiveSection}=useActiveSectionContext();
+  const{activeSection,setActiveSection, setTimeOfLastClick}=useActiveSectionContext();
 
 
 
@@ -41,7 +41,7 @@ export default function Header() {
                 href={link.hash}
                 onClick={() => {
                   setActiveSection(link.name);
-                  // setTimeOfLastClick(Date.now());
+                  setTimeOfLastClick(Date.now());
                 }}
               >
                 {link.name}

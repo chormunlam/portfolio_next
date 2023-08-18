@@ -3,12 +3,21 @@
 import {motion} from 'framer-motion'
 import React from 'react';
 import SectionHeading from './section-heading'
+import { useInView } from 'react-intersection-observer';
 
 export default function About(){
-    return <motion.section className='mb-28 max-we-[45rem] text-center leading-8 sm:mb-40'
+
+  const{ref,inView}=useInView();
+  console.log(inView)
+
+    return <motion.section 
+    ref={ref}
+    className='mb-28 max-we-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28'
     initial={{opacity:0, y:100}}
     animate={{opacity:1, y:0}}
-    transition={{delay:0.175}}>
+    transition={{delay:0.175}}
+    id='about'
+   >
         <SectionHeading>About me</SectionHeading>
         <p className="mb-3">I've always been drawn to the 
         endless possibilities of technology. Since graduating 

@@ -5,7 +5,7 @@ import Project from '@/components/project'
 
 export default function Projects() {
   return (
-    <section id='projects' className='scoll-mt-28'>
+    <section id='projects' className='scroll-mt-28'>
       <SectionHeading>My Projects</SectionHeading>
       <div>
         {projectsData.map((project, index) => (

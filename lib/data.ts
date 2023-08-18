@@ -6,6 +6,7 @@ import cat from "@/public/catAdopt.png";
 import onlyfan from "@/public/onlyFans.png";
 import wordCount from "@/public/textParser.jpg";
 
+
 export const links = [
   {
     name: "Home",
@@ -76,7 +77,7 @@ export const projectsData = [
     imageUrl: cat,
   },
   {
-    title: "onlyFan",
+    title: "onlyFan Clone",
     description:
       "allow to do the translation using voice input, with user friendly UI.",
     tags: ["React native", "AWS amplify"],

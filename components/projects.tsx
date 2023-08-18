@@ -1,16 +1,19 @@
-"use client";
+import React from "react";
+import SectionHeading from "./section-heading";
+import { projectsData } from "@/lib/data";
+import Project from '@/components/project'
 
-import {motion} from 'framer-motion'
-import React from 'react';
-import SectionHeading from './section-heading'
-
-export default function Projects(){
-    return <motion.section className='mb-28 max-we-[45rem] text-center leading-8 sm:mb-40'
-    initial={{opacity:0, y:100}}
-    animate={{opacity:1, y:0}}
-    transition={{delay:0.175}}>
-        <SectionHeading>My Projects</SectionHeading>
-      
-           
-    </motion.section>
+export default function Projects() {
+  return (
+    <section>
+      <SectionHeading>My Projects</SectionHeading>
+      <div>
+        {projectsData.map((project, index) => (
+          <React.Fragment key={index}>
+            <Project {...project} />
+          </React.Fragment>
+        ))}
+      </div>
+    </section>
+  );
 }

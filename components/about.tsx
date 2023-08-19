@@ -26,16 +26,9 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I've always been drawn to the endless possibilities of technology. Since
-        graduating with a degree in{" "}
-        <span className="font-medium">Computer Science</span>, my journey has
-        taken me from coding with <span className="font-medium">HTML</span>,
-        <span className="font-medium">CSS</span>, and{" "}
-        <span className="font-medium">JavaScript </span>
-        to exploring <span className="font-medium">React </span>
-        and diving into <span className="font-medium">AI </span>
-        and <span className="font-medium">Cloud Computing</span>. I'm not just
-        working with code; I'm engaging with the future, learning every day, and
+       Since graduating with a degree in{" "}
+        <span className="font-medium">Computer Science</span>,  I&apos;m not just
+        working with code; I&apos;m engaging with the future, learning every day, and
         loving every moment of this exciting field.
       </p>
     </motion.section>

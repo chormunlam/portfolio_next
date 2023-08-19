@@ -19,3 +19,7 @@ npm i --save-dev @types/react-vertical-timeline-component
 
 
 use resend libray to send email
+
+
+https://react.email/docs/integrations/resend to sytle the email hahahahha.  npm i @react-email/components @react-email/tailw
+ind

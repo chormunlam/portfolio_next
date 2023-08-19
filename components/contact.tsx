@@ -48,9 +48,10 @@ export default function Contact() {
           const { data, error } = await sendEmail(formData);
 
           if (error) {
-            toast.error(error);
+            console.log(error)
             return;
           }
+          console.log('sent');
 
          //toast.success("Email sent to Chormun successfully!");
         }}

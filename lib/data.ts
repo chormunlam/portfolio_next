@@ -58,7 +58,7 @@ export const experiencesData = [
     title: "Graduated from Queens College",
     location: "New York, NY",
     description:
-      "Graduated with a major in computer science in June 2023. Gained skills in HTML, CSS, JavaScript, React, and continued learning data analysis, AI, Cloud Computing, and other new technologies.",
+      "Graduated with a major in computer science in June 2023. Gained skills in Problem solving, and continued learning HTML, CSS, JavaScript, React, data analysis, AI, Cloud Computing, and other new technologies.",
     icon: React.createElement(LuGraduationCap),
     date: "June 2023",
   },

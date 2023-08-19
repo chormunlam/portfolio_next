@@ -67,14 +67,14 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Word Analytics",
+    title: "Word Parser",
     description:
       "my first web app for analytics on url. It shows word count with url, and start and end",
     tags: ["html", "css", "mySQL", "php"],
     imageUrl: wordCount,
   },
   {
-    title: "Cat Adoption",
+    title: "Cat Adoption Website",
     description:
       "this is the website for member to log in and add cat, it will reender on the home page, has features like filtering, sorting and pagination.",
     tags: ["React", "JavaScript", "supabase backend", "Styled component"],

@@ -29,6 +29,7 @@ export default function ActiveSectionContextProvider({
       value={{
         activeSection,
         setActiveSection,
+        
         timeOfLastClick,
         setTimeOfLastClick,
       }}

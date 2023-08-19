@@ -1,20 +1,31 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-// import { useSectionInView } from "@/lib/hooks";
-// import { useActiveSectionContext } from "@/context/active-section-context";
-
+import { useSectionInView } from "@/lib/hooks";
+import { ActiveSectionContext, useActiveSectionContext } from "@/context/active-section-context";
 export default function Intro() {
-  // const { ref } = useSectionInView("Home", 0.5);
-  // const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
+   const {ref}= useSectionInView("Home", 0.5);
+   const{activeSection,setActiveSection, setTimeOfLastClick}=useActiveSectionContext();
+
+  // const { ref, inView } = useInView({
+  //   threshold:0.5,
+  // }); //inview tell use ture or false are we at that section
+  // const{  setActiveSection,timeOfLastClick }  = useActiveSectionContext();
+  
+  // useEffect(()=>{
+  //   if (inView && Date.now()-timeOfLastClick >1000 ) {
+  //     setActiveSection("Home");
+  //   }
+  // },[inView, setActiveSection, timeOfLastClick])
 
   return (
-    <section id='home' 
+    <section ref={ref} id='home' 
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
@@ -72,7 +83,13 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-blue-950 active:scale-105 transition"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 
+          rounded-full outline-none focus:scale-110 hover:scale-110
+           hover:bg-blue-950 active:scale-105 transition"
+           onClick={()=>{
+            setActiveSection('Contact');
+            setTimeOfLastClick(Date.now());
+           }}
      
         >
           Contact me here{" "}

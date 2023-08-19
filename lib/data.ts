@@ -1,6 +1,7 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaWordpress } from "react-icons/fa";
+
 import { LuGraduationCap } from "react-icons/lu";
 import cat from "@/public/catAdopt.png";
 import onlyfan from "@/public/onlyFans.png";
@@ -35,31 +36,34 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+ 
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Intern",
+    location: "New York, NY",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Currently working as an intern, focusing on hands-on experience to understand real-world applications. Committed to learning and preparing for a full-time position, particularly in debugging projects.",
+  
+    icon: React.createElement(FaReact ),
+    date: "Present",
+  },
+  {
+    title: "Part-time Associate at Queens College Tech Incubator",
+    location: "New York, NY",
+    description:
+      "Developed and maintained WordPress websites using Woo-commerce and Elementor. Collaborated on a Chatbot project using JavaScript and managed Google Forms for client information. Represented the Tech Incubator at events, creating networking opportunities.",
+      icon: React.createElement(FaWordpress),
+    date: "10/01/2022 - Present",
+  },
+  {
+    title: "Graduated from Queens College",
+    location: "New York, NY",
+    description:
+      "Graduated with a major in computer science in June 2023. Gained skills in Problem solving, and continued learning HTML, CSS, JavaScript, React, data analysis, AI, Cloud Computing, and other new technologies.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "June 2023",
   },
 ] as const;
+
 
 export const projectsData = [
   {
@@ -72,14 +76,14 @@ export const projectsData = [
   {
     title: "Cat Adoption",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "this is the website for member to log in and add cat, it will reender on the home page, has features like filtering, sorting and pagination.",
     tags: ["React", "JavaScript", "supabase backend", "Styled component"],
     imageUrl: cat,
   },
   {
     title: "onlyFan Clone",
     description:
-      "allow to do the translation using voice input, with user friendly UI.",
+      "mobile subsciption member app allow to render user card, post image and messge. Authenation using the AWS amplify",
     tags: ["React native", "AWS amplify"],
     imageUrl: onlyfan,
   },
@@ -91,14 +95,13 @@ export const skillsData = [
   "JavaScript",
   "React",
   "Next.js",
-  "Node.js",
+  "AWS",
   "Git",
   "Tailwind",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Express",
-  "PostgreSQL",
+  "Supabase",
+  "styled component",
+  'Php',
+  "MySQL",
   "Python",
   "Framer Motion",
 ] as const;

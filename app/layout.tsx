@@ -1,10 +1,16 @@
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
+
+
+
+
 const inter = Inter({ subsets: ["latin"] });
+
 //https://colors.muz.li/palette/ffffbf/b3b386/bfcfff/8691b3/ffbfbf
 export const metadata = {
   title: "ChorMun | Portfolio",
@@ -28,6 +34,7 @@ export default function RootLayout({
           <ActiveSectionContextProvider>
             <Header />
             {children}
+            <Footer />
 
             <Toaster position="top-right" />
      

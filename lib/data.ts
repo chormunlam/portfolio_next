@@ -76,7 +76,7 @@ export const projectsData = [
   {
     title: "Cat Adoption",
     description:
-      "this is the website for member to log in and add cat, it will reender on the home page, use react.js as frontend, styled with styled compoent, the homepage it for public, after sign, we can addthe cat It has features like filtering, sorting and pagination.",
+      "this is the website for member to log in and add cat, it will reender on the home page, has features like filtering, sorting and pagination.",
     tags: ["React", "JavaScript", "supabase backend", "Styled component"],
     imageUrl: cat,
   },

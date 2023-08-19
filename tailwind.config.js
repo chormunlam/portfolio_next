@@ -8,11 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-      
-   
-      
         
-     
+      
       
       },
       backgroundImage: {
@@ -23,4 +20,5 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: 'class',
 }

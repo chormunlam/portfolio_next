@@ -7,17 +7,21 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
-import { ActiveSectionContext, useActiveSectionContext } from "@/context/active-section-context";
+import {
+  ActiveSectionContext,
+  useActiveSectionContext,
+} from "@/context/active-section-context";
+import me from "@/public/me.png";
 export default function Intro() {
-
-   const {ref}= useSectionInView("Home", 0.5);
-   const{activeSection,setActiveSection, setTimeOfLastClick}=useActiveSectionContext();
+  const { ref } = useSectionInView("Home", 0.5);
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
 
   // const { ref, inView } = useInView({
   //   threshold:0.5,
   // }); //inview tell use ture or false are we at that section
   // const{  setActiveSection,timeOfLastClick }  = useActiveSectionContext();
-  
+
   // useEffect(()=>{
   //   if (inView && Date.now()-timeOfLastClick >1000 ) {
   //     setActiveSection("Home");
@@ -25,7 +29,9 @@ export default function Intro() {
   // },[inView, setActiveSection, timeOfLastClick])
 
   return (
-    <section ref={ref} id='home' 
+    <section
+      ref={ref}
+      id="home"
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
@@ -39,13 +45,10 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1566251037378-5e04e3bec343?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-              alt="horse"
-              width="216"
-              height="216"
-              quality="95"
-              priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              src={me}
+              alt="Chormun"
+              quality={100}
+              className="h-28 w-28 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
@@ -60,7 +63,7 @@ export default function Intro() {
               duration: 0.7,
             }}
           >
-            💛
+            💜
           </motion.span>
         </div>
       </div>
@@ -70,7 +73,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I&apos;m ChorMun.</span> 
+        <span className="font-bold">Hello, I&apos;m ChorMun.</span>
       </motion.h1>
 
       <motion.div
@@ -86,11 +89,10 @@ export default function Intro() {
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 
           rounded-full outline-none focus:scale-110 hover:scale-110
            hover:bg-blue-950 active:scale-105 transition"
-           onClick={()=>{
-            setActiveSection('Contact');
+          onClick={() => {
+            setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
-           }}
-     
+          }}
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
@@ -124,3 +126,4 @@ export default function Intro() {
     </section>
   );
 }
+////"https://images.unsplash.com/photo-1566251037378-5e04e3bec343?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"

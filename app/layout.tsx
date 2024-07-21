@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 //https://colors.muz.li/palette/ffffbf/b3b386/bfcfff/8691b3/ffbfbf
 export const metadata = {
   title: "ChorMun | Portfolio",
-  description: "Ricardo is a full-stack developer with 8 years of experience.",
+  description: "Chormun is a full-stack developer with 1 year of experience.",
 };
 
 export default function RootLayout({
